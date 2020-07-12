@@ -15,3 +15,14 @@ header {
     align-items: center;
     justify-content: center;
 }
+
+header h1::after {
+    content: "|";
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    40% {
+        opacity: 0;
+    }
+}
